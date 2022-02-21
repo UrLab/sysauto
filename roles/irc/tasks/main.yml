@@ -1,0 +1,6 @@
+- name: "installing All packets"
+  apt:
+    update_cache: yes
+    state: latest
+    pkg:
+      - weechat

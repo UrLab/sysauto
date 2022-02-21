@@ -1,0 +1,12 @@
+- hosts:
+    - accessnetwork
+    - webservers
+    - mail
+    - irc
+    - docker
+    - hypervisor
+    - routers
+    - dns
+  become: true
+  roles:
+    - upgrades

@@ -1,0 +1,15 @@
+- name: "installing All packets"
+  apt:
+    update_cache: yes
+    state: latest
+    pkg:
+      - traceroute
+      - git
+      - build-essential
+      - dnsutils
+      - fail2ban
+      - sudo
+      - htop
+      - neofetch
+      - curl
+      - mtr

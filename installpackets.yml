@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: true
+  roles:
+  - mainpackages
+
+- hosts: dns
+  become: true
+  roles:
+    - dnspackages
+
+- hosts: irc
+  become: true
+  roles:
+    - ircpackages
